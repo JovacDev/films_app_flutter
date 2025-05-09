@@ -57,7 +57,7 @@ class _MovieSliderState extends State<MovieSlider> {
 }
 
 class _MoviePoster extends StatelessWidget {
-  const _MoviePoster({super.key, required this.movie});
+  const _MoviePoster({required this.movie});
 
   final Movie movie;
 
@@ -94,7 +94,7 @@ class _MoviePoster extends StatelessWidget {
           const SizedBox(height: 5),
           Text(
             movie.title,
-            maxLines: 2,
+            maxLines: 1,
             textAlign: TextAlign.center,
             overflow: TextOverflow.ellipsis,
           )

@@ -5,12 +5,10 @@ import 'package:provider/provider.dart';
 
 class MovieSearchDelegate extends SearchDelegate {
   @override
-  // TODO: implement searchFieldLabel
   String get searchFieldLabel => 'Buscar película';
 
   @override
   List<Widget>? buildActions(BuildContext context) {
-    // TODO: implement buildActions
     return [
       IconButton(onPressed: () => query = '', icon: const Icon(Icons.clear))
     ];
@@ -18,7 +16,6 @@ class MovieSearchDelegate extends SearchDelegate {
 
   @override
   Widget? buildLeading(BuildContext context) {
-    // TODO: implement buildLeading
     return IconButton(
         onPressed: () {
           close(context, null);
@@ -28,8 +25,7 @@ class MovieSearchDelegate extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
-    // TODO: implement buildResults
-    return Text('buildResults');
+    return const Text('buildResults');
   }
 
   Widget _emptyContainer() {
@@ -43,7 +39,6 @@ class MovieSearchDelegate extends SearchDelegate {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    // TODO: implement buildSuggestions
     if (query.isEmpty) {
       return _emptyContainer();
     }
@@ -68,7 +63,7 @@ class MovieSearchDelegate extends SearchDelegate {
 }
 
 class _MovieItem extends StatelessWidget {
-  const _MovieItem({super.key, required this.movie});
+  const _MovieItem({required this.movie});
 
   final Movie movie;
 

@@ -15,7 +15,7 @@ class AppState extends StatelessWidget {
           lazy: false,
         ),
       ],
-      child: FilmsApp(),
+      child: const FilmsApp(),
     );
   }
 }

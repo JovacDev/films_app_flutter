@@ -35,7 +35,7 @@ class DetailsPage extends StatelessWidget {
 }
 
 class _CustomAppBar extends StatelessWidget {
-  const _CustomAppBar({super.key, required this.movie});
+  const _CustomAppBar({required this.movie});
 
   final Movie movie;
 
@@ -56,7 +56,7 @@ class _CustomAppBar extends StatelessWidget {
           color: Colors.black12,
           child: Text(
             movie.title,
-            style: const TextStyle(fontSize: 16),
+            style: const TextStyle(fontSize: 16, color: Colors.white),
             textAlign: TextAlign.center,
           ),
         ),
@@ -71,7 +71,7 @@ class _CustomAppBar extends StatelessWidget {
 }
 
 class _PosterAndTitle extends StatelessWidget {
-  const _PosterAndTitle({super.key, required this.movie});
+  const _PosterAndTitle({required this.movie});
 
   final Movie movie;
 
@@ -138,7 +138,7 @@ class _PosterAndTitle extends StatelessWidget {
 }
 
 class _Overview extends StatelessWidget {
-  const _Overview({super.key, required this.movie});
+  const _Overview({required this.movie});
 
   final Movie movie;
 

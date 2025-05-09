@@ -40,7 +40,7 @@ class CastingCards extends StatelessWidget {
 }
 
 class _CastCard extends StatelessWidget {
-  const _CastCard({super.key, required this.actor});
+  const _CastCard({required this.actor});
 
   final Cast actor;
 
@@ -64,7 +64,7 @@ class _CastCard extends StatelessWidget {
         const SizedBox(height: 5),
         Text(
           actor.name,
-          maxLines: 2,
+          maxLines: 1,
           overflow: TextOverflow.ellipsis,
           textAlign: TextAlign.center,
         )
